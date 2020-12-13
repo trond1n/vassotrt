@@ -9,11 +9,17 @@ https://flickity.metafizzy.co
 .flickity-enabled:focus { outline: none; }
 
 .flickity-viewport {
+  width: 100%;
   overflow: hidden;
   position: relative;
   min-height: 350px;
 
 }
+.flickity-viewport:after {
+  background: linear-gradient(90deg, rgba(245, 246, 247, 0), #f5f6f7);
+  right: 0;
+}
+
 
 .flickity-slider {
   position: absolute;
