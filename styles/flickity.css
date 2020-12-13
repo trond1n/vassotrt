@@ -12,7 +12,7 @@ https://flickity.metafizzy.co
   width: 100%;
   overflow: hidden;
   position: relative;
-  min-height: 350px;
+  min-height: 300px;
 
 }
 .flickity-viewport:after {
