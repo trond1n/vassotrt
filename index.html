@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отзывы</title>
@@ -24,7 +25,7 @@
                 </button>
             </div>
         </div>
-        <div class="feedback__list">
+        <div class="feedback__list swiper-container">
             <div class="feedback__item">
                 <div class="feedback__item_about">
                     <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
@@ -48,6 +49,8 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
