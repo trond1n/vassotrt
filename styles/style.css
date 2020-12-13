@@ -12,11 +12,7 @@ html {
     align-items: center;
 }
 
-button {
-    border: 0;
-    background-color: #fff;
-    outline: none;
-}
+
 
 .feedback {
     background-color: #fff;
@@ -53,6 +49,12 @@ max-width: 1300px;
     color: #1f3870;
     margin-right: 230px;
 }
+button {
+    border: 0;
+    background-color: #fff;
+    outline: none;
+}
+
 .slider__button{
     display: flex;
     align-items: center;

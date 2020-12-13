@@ -3,53 +3,171 @@
 
 <head>
     <link rel="stylesheet" href="./vendor/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./styles/flickity.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отзывы</title>
 </head>
+
+
 
 <body>
     <div class="feedback">
         <div class="feedback__header">
             <img src="./images/Rectangle 5 copy 5.png" alt="gradient" class="feedback__gradient">
             <h1 class="feedback__title">Отзывы постоянных клиентов</h1>
-            <div class="slider__button">
-                <button>
-                    <img src="./images/arrow left.png" alt="prev" class="slider__button_prev">
+
+            <div class="button-row">
+                <button class="button button--previous">
+                    <img src="./images/arrow left.png" alt="prev">
                 </button>
                 <span class="slider__page-count">1 / 6</span>
-                <button>
-                    <img src="./images/arrow right.png" alt="next" class="slider__button_next">
+                <button class="button button--next">
+                    <img src="./images/arrow right.png" alt="next">
                 </button>
             </div>
         </div>
-        <div class="feedback__list swiper-container">
-            <div class="feedback__item">
-                <div class="feedback__item_about">
-                    <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
-                    <div class="feedback__item_info">
-                        <p class="feedback__item_autor-name">Илья Константинов</p>
-                        <div class="feedback__item_stars-container">
-                            <p class="feedback__item_star">★</p>
-                            <p class="feedback__item_star">★</p>
-                            <p class="feedback__item_star">★</p>
-                            <p class="feedback__item_star">★</p>
-                            <p class="feedback__item_star">★</p>
+        <div class="wrapper">
+            <div class="feedback__list">
+                <div class="feedback__item">
+                    <div class="feedback__item_about">
+                        <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
+                        <div class="feedback__item_info">
+                            <p class="feedback__item_autor-name">Илья Константинов</p>
+                            <div class="feedback__item_stars-container">
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="feedback__item_text-container">
+                        <img src="./images/quote.png" alt="quote" class="feedback__item_quote-symbol">
+                        <p class="feedback__item_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Quibusdam
+                            dicta sapiente nostrum accusamus cum quos, voluptatum rem? Enim, laudantium hic delectus
+                            explicabo, tempora laboriosam tempore laborum voluptas tenetur officiis deserunt.</p>
+                    </div>
                 </div>
-                <div class="feedback__item_text-container">
-                    <img src="./images/quote.png" alt="quote" class="feedback__item_quote-symbol">
-                    <p class="feedback__item_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
-                        dicta sapiente nostrum accusamus cum quos, voluptatum rem? Enim, laudantium hic delectus
-                        explicabo, tempora laboriosam tempore laborum voluptas tenetur officiis deserunt.</p>
+                <div class="feedback__item">
+                    <div class="feedback__item_about">
+                        <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
+                        <div class="feedback__item_info">
+                            <p class="feedback__item_autor-name">Илья Константинов</p>
+                            <div class="feedback__item_stars-container">
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item_text-container">
+                        <img src="./images/quote.png" alt="quote" class="feedback__item_quote-symbol">
+                        <p class="feedback__item_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Quibusdam
+                            dicta sapiente nostrum accusamus cum quos, voluptatum rem? Enim, laudantium hic delectus
+                            explicabo, tempora laboriosam tempore laborum voluptas tenetur officiis deserunt.</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__item_about">
+                        <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
+                        <div class="feedback__item_info">
+                            <p class="feedback__item_autor-name">Илья Константинов</p>
+                            <div class="feedback__item_stars-container">
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item_text-container">
+                        <img src="./images/quote.png" alt="quote" class="feedback__item_quote-symbol">
+                        <p class="feedback__item_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Quibusdam
+                            dicta sapiente nostrum accusamus cum quos, voluptatum rem? Enim, laudantium hic delectus
+                            explicabo, tempora laboriosam tempore laborum voluptas tenetur officiis deserunt.</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__item_about">
+                        <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
+                        <div class="feedback__item_info">
+                            <p class="feedback__item_autor-name">Илья Константинов</p>
+                            <div class="feedback__item_stars-container">
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item_text-container">
+                        <img src="./images/quote.png" alt="quote" class="feedback__item_quote-symbol">
+                        <p class="feedback__item_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Quibusdam
+                            dicta sapiente nostrum accusamus cum quos, voluptatum rem? Enim, laudantium hic delectus
+                            explicabo, tempora laboriosam tempore laborum voluptas tenetur officiis deserunt.</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__item_about">
+                        <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
+                        <div class="feedback__item_info">
+                            <p class="feedback__item_autor-name">Илья Константинов</p>
+                            <div class="feedback__item_stars-container">
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item_text-container">
+                        <img src="./images/quote.png" alt="quote" class="feedback__item_quote-symbol">
+                        <p class="feedback__item_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Quibusdam
+                            dicta sapiente nostrum accusamus cum quos, voluptatum rem? Enim, laudantium hic delectus
+                            explicabo, tempora laboriosam tempore laborum voluptas tenetur officiis deserunt.</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="feedback__item_about">
+                        <img src="./images/author.png" alt="author photo" class="feedback__item_author-photo">
+                        <div class="feedback__item_info">
+                            <p class="feedback__item_autor-name">Илья Константинов</p>
+                            <div class="feedback__item_stars-container">
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                                <p class="feedback__item_star">★</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item_text-container">
+                        <img src="./images/quote.png" alt="quote" class="feedback__item_quote-symbol">
+                        <p class="feedback__item_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Quibusdam
+                            dicta sapiente nostrum accusamus cum quos, voluptatum rem? Enim, laudantium hic delectus
+                            explicabo, tempora laboriosam tempore laborum voluptas tenetur officiis deserunt.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/flickity.pkgd.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 
