@@ -12,28 +12,31 @@ const flkty = new Flickity(carousel, {
   prevNextButtons: false,
   pageDots: false,
 });
-// // elements
-// const cellsButtonGroup = document.querySelector('.button-group--cells');
-// const cellsButtons = utils.makeArray( cellsButtonGroup.children );
+// elements
+const cellsButtonGroup = document.querySelector('.button-group--cells');
+const cellsButtons = utils.makeArray( cellsButtonGroup.children );
 
-// // update buttons on select
-// flkty.on( 'select', function() {
-//   const previousSelectedButton = cellsButtonGroup.querySelector('.is-selected');
-//   const selectedButton = cellsButtonGroup.children[ flkty.selectedIndex ];
-//   previousSelectedButton.classList.remove('is-selected');
-//   selectedButton.classList.add('is-selected');
-// });
+// update buttons on select
+flkty.on( 'select', function() {
+  const previousSelectedButton = cellsButtonGroup.querySelector('.is-selected_paginate');
+  const selectedButton = cellsButtonGroup.children[ flkty.selectedIndex ];
+  previousSelectedButton.classList.remove('is-selected_paginate');
+  selectedButton.classList.add('is-selected_paginate');
+});
 
 //count
 const itemList = document.querySelectorAll(".feedback__item");
 const field = document.querySelector(".slider__page-count");
-
 let count = 1
 
-// setCount = (list) => {
-
-//   console.log(result);
-// };
+// cell select
+cellsButtonGroup.addEventListener( 'click', function( event ) {
+    if ( !matchesSelector( event.target, '.pagination__button' ) ) {
+      return;
+    }
+    var index = cellsButtons.indexOf( event.target );
+    flkty.select( index );
+  });
 // previous
 const previousButton = document.querySelector(".button--previous");
 previousButton.addEventListener("click", function () {
